@@ -3,15 +3,15 @@ import Browse from "./Browse";
 // import { createBrowserRouter, useNavigate } from "react-router-dom";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";  
-import { useEffect } from "react";
-import { onAuthStateChanged } from "firebase/auth";
-import {auth} from "../utils/firebase"
-import { useDispatch } from "react-redux";
-import {addUser, removeUser} from "../utils/userSlice"
+// import { useEffect } from "react";
+// import { onAuthStateChanged } from "firebase/auth";
+// import {auth} from "../utils/firebase"
+// import { useDispatch } from "react-redux";
+// import {addUser, removeUser} from "../utils/userSlice"
 
 const Body = () =>{
 
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     // const navigate = useNavigate();
 
     const appRouter = createBrowserRouter([
@@ -25,25 +25,25 @@ const Body = () =>{
         }
     ]);
 
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-  if (user) {
-    // User is signed in, see docs for a list of available properties
-    // https://firebase.google.com/docs/reference/js/auth.user
-    const { uid, email, displayName, photoURL } = user;
+//     useEffect(() => {
+//         onAuthStateChanged(auth, (user) => {
+//   if (user) {
+//     // User is signed in, see docs for a list of available properties
+//     // https://firebase.google.com/docs/reference/js/auth.user
+//     const { uid, email, displayName, photoURL } = user;
 
-    dispatch(addUser({uid:uid , email: email , displayName: displayName , photoURL:photoURL}));
-    // navigate("/browse"); // when the user sign in the page should navigate to browse page
-    // ...
-  } else {
-    // User is signed out(if the user sign out I will dispatch another action)
-    dispatch(removeUser())
-    // navigate("/"); //When the user sign out the page should navite to main page
+//     dispatch(addUser({uid:uid , email: email , displayName: displayName , photoURL:photoURL}));
+//     // navigate("/browse"); // when the user sign in the page should navigate to browse page
+//     // ...
+//   } else {
+//     // User is signed out(if the user sign out I will dispatch another action)
+//     dispatch(removeUser())
+//     // navigate("/"); //When the user sign out the page should navite to main page
 
-    // ...
-  }
-});
-    },[]);
+//     // ...
+//   }
+// });
+//     },[]);
 
     return <div>
         <RouterProvider router={appRouter}/>
