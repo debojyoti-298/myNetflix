@@ -3,3 +3,5 @@ export const LOGO = "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_produ
 export const USER_AVATAR = "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg";
 
 export const API_OPTIONS = {method: 'GET', headers: {accept: 'application/json',Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3OTliY2FjYWRmMmFjMmE1MmQyMzZkMjRhOTQzNDBmMiIsIm5iZiI6MTc3MTg2OTk2NS44NSwic3ViIjoiNjk5Yzk3MGRlNTg3ZTYzNmI5ZThmZjk4Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.yK7uUGazh2wCK1tOpuPO4PG0N6e0SepdesOKdcn8o0o'}};
+
+export const IMG_CDN_URL="https://image.tmdb.org/t/p/w500";
