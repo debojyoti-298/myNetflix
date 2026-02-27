@@ -5,3 +5,7 @@ export const USER_AVATAR = "https://wallpapers.com/images/hd/netflix-profile-pic
 export const API_OPTIONS = {method: 'GET', headers: {accept: 'application/json',Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3OTliY2FjYWRmMmFjMmE1MmQyMzZkMjRhOTQzNDBmMiIsIm5iZiI6MTc3MTg2OTk2NS44NSwic3ViIjoiNjk5Yzk3MGRlNTg3ZTYzNmI5ZThmZjk4Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.yK7uUGazh2wCK1tOpuPO4PG0N6e0SepdesOKdcn8o0o'}};
 
 export const IMG_CDN_URL="https://image.tmdb.org/t/p/w500";
+
+export const BG_URL="https://assets.nflxext.com/ffe/siteui/vlv3/37372b0c-16ef-4614-9c66-f0464ffe4136/web/IN-en-20260216-TRIFECTA-perspective_74aa38a5-f527-417e-a604-a039567a350b_large.jpg";
+
+export const SUPPORTED_LANGUAGES = [{identifier:"en",name:"English"}, {identifier:"hindi",name:"Hindi"}, {identifier:"spanish",name:"Spanish"},]

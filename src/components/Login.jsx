@@ -7,7 +7,7 @@ import { auth } from "../utils/firebase";
 // import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-import { USER_AVATAR } from "../utils/constants";
+import { BG_URL, USER_AVATAR } from "../utils/constants";
 
 
 
@@ -101,7 +101,7 @@ const Login = () =>{
     <div>
         <Header />
         <div className="absolute">
-            <img src= "https://assets.nflxext.com/ffe/siteui/vlv3/37372b0c-16ef-4614-9c66-f0464ffe4136/web/IN-en-20260216-TRIFECTA-perspective_74aa38a5-f527-417e-a604-a039567a350b_large.jpg" alt="logo"/>
+            <img src= {BG_URL} alt="logo"/>
         </div>
         <form onSubmit={(e)=>e.preventDefault()} className="w-3/12 absolute p-12 bg-black my-24 mx-auto right-0 left-0 text-white rounded-lg opacity-75">
         <h1 className="font-bold text-3xl py-4">{isSignInForm? "Sign In":"Sign Up"}</h1>
